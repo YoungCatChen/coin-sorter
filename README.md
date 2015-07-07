@@ -1,4 +1,4 @@
-# Auto Coin Sorter for All Currencies
+# Auto Coin Sorter for Many Currencies
 
 http://www.thingiverse.com/thing:499177
 
