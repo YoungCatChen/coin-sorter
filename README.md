@@ -18,3 +18,4 @@ To **get a coin**, you may pull the whole rack out and take out any coin.
 * Swiss franc (CHF)
 * Canadian dollar (CAD)
 * Thai Baht (THB)
+* Chinses Yuan (CNY)
