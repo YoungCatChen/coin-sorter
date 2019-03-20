@@ -1,7 +1,7 @@
 /* [General] */
 
 // Choose a currency you use.
-currency = "usd"; // [usd:USD - US dollar, eur:EUR - Euro, chf:CHF - Swiss franc, cad:CAD - Canadian dollar, thb:THB - Thai Baht, other:Other (See "Slot customization" tab above)]
+currency = "usd"; // [usd:USD - US dollar, eur:EUR - Euro, chf:CHF - Swiss franc, cad:CAD - Canadian dollar, thb:THB - Thai Baht, cny:CNY - Chinese Yuan, other:Other (See "Slot customization" tab above)]
 
 // How tall is the the shortest tube? In millimeters:
 height = 50; // [10:150]
@@ -66,6 +66,14 @@ thb_coins = [[26.00, 24.05, 22.05, 20.01],
              [ 2.16,  2.13,  1.48,  1.38]];
 pln_coins = [[24.00, 23.00, 21.50, 20.50, 19.50, 18.50, 17.50, 16.50, 15.50],
              [ 2.00,  1.50,  2.00,  1.50,  1.00,  1.50,  1.50,  1.50,  1.50]];
+cny_coins = [[25.00, 20.50, 19.00],
+             [ 1.85,  1.65,  1.67]];
+
+/* [CNY All Types - include set II] */
+/*
+cny_coins = [[25.00, 24.00, 21.00, 20.50, 19.00, 18.00],
+             [ 1.85,  1.80,  1.60,  1.65,  1.67,  1.30]];
+*/
 
 other_coins_d_t = [
   [coin_1_diameter, coin_1_thickness], [coin_2_diameter, coin_2_thickness],
@@ -90,7 +98,8 @@ coins = currency == "usd" ? usd_coins :
         currency == "chf" ? chf_coins :
         currency == "cad" ? cad_coins :
         currency == "thb" ? thb_coins :
-        currency == "pln" ? pln_coins : other_coins;
+        currency == "pln" ? pln_coins :
+        currency == "cny" ? cny_coins : other_coins;
 
 coins_d = coins[0];
 coins_thickness = coins[1];
